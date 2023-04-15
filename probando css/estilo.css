@@ -13,8 +13,9 @@ html{
 body{
     min-height: 100vh;
     width: 100%;
-    background-color: #fb97ef;
-    background-image: linear-gradient(0deg, #fb97ef 0%, #ffffff 100%);
+    background-color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 0%, #FF9A8B 21%, #FF6A88 33%, #FF99AC 100%);
+
 
 }
 
@@ -66,10 +67,10 @@ nav a{
 
   .section-container{
     width: 100%;
-    height: 600px;
+    height: 700px;
     
   }
-
+  
 
   
 
@@ -93,11 +94,11 @@ nav a{
   }
   
   .slide img {
-    width: 100%;
-    height: 600px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
   }
-  
+ 
   .prev-button,
   .next-button {
     display: flex;
@@ -108,7 +109,6 @@ nav a{
     transform: translateY(-50%);
     width: 60px;
     height: 60px;
-    background-color: pink;
    
     border-radius: 50%;
     font-size: 24px;
@@ -119,8 +119,8 @@ nav a{
   
   .prev-button:hover,
   .next-button:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
   
   .prev-button {
@@ -252,7 +252,7 @@ form {
 
 footer{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 270px;
@@ -260,7 +260,7 @@ footer{
 }
 
 .caja_footer{
-  width: 30%;
+  width: 17%;
   height: 100%;
 }
 
