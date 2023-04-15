@@ -245,9 +245,19 @@ form {
 
 
 
+.section_map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 100%;
+}
 
-
-
+.div_map{
+  width: 75%;
+  height: 75%;
+  border: solid 2px #ccc;
+}
 
 
 
