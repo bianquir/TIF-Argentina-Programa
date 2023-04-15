@@ -61,11 +61,17 @@ nav a{
     color: #fb97ef;
   }
 
+
+
+
   .section-container{
     width: 100%;
     height: 600px;
     
   }
+
+
+  
 
 
 .carousel {
@@ -124,6 +130,11 @@ nav a{
   .next-button {
     right: 20px;
   }
+
+
+
+
+
 
 
 
@@ -189,7 +200,7 @@ form {
     margin: auto;
     
   }
-  
+ 
   label {
     display: block;
     margin-bottom: 5px;
@@ -222,16 +233,6 @@ form {
 
 
 
-
-
-
-
-
-
-
-.sec_3{
-  
-}
 
 
 
