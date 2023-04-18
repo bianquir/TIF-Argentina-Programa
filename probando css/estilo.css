@@ -239,6 +239,42 @@ form {
 
 
 
+/*FORMULARIO DE PROCESO*/
+/* Aplicar fondo blanco al formulario */
+#formularioProceso {
+  background-color: #fff;
+  padding: 20px; /* Añadir un poco de espacio alrededor del formulario */
+}
+
+/* Estilizar los botones con fondo rosa */
+button[type="submit"] {
+  background-color: pink;
+  color: #fff;
+  padding: 10px 20px; /* Añadir un poco de espacio dentro del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: hotpink; /* Cambiar el fondo cuando el usuario pase el ratón sobre el botón */
+}
+
+/* Alinear los inputs uno debajo del otro */
+#formularioProceso label,
+#formularioProceso input {
+  display: block;
+  margin-bottom: 10px; /* Añadir un poco de espacio entre los inputs */
+}
+
+
+
+
+
+
+
+
+
 
 
 
