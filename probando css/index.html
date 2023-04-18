@@ -75,19 +75,23 @@
     </section>
 
 
-
-
     <section id="sec3" class="section-container sec_3">
-      <h2>Formulario de un Proceso</h2>
-      <form id="formularioProceso" method="post">
+      <h2  class="title">Formulario de un Proceso</h2>
+      <form class="form" id="formularioProceso" method="post">
+        <div class="group">
         <label for="nombreProceso">Nombre</label>
         <input type="text" id="nombreProceso" name="nombreProceso">
+        </div>
         <br>
-        <label for="precio">Art que compro</label>
+        <div class="group">
+        <label for="precio">Artículo que compró</label>
         <input type="number" id="art" name="precio">
+        </div>
         <br>
-        <label for="cantidad">¿Cual es su reclamo?</label>
-        <input type="text" id="reclamo" name="cantidad">
+        <div class="group">
+        <label for="cantidad">¿Cuál es su reclamo?</label>
+        <textarea placeholder="" id="reclamo" name="cantidad" rows="5" required=""></textarea>
+        </div>
         <button type="submit">Continuar</button>
     </form>
       
