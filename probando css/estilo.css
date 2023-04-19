@@ -151,15 +151,13 @@ nav a:hover{
   justify-content: space-evenly;
   flex-direction: row;
   align-content: space-between;
-  margin: 20px auto;
+  margin: 30px auto;
 
 
 }
 
-.equipo{
-  border: 1px solid #fff;
-  font-size: 14px;
-  height: 200px;
+.equipo {
+  height: 150px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -167,24 +165,20 @@ nav a:hover{
   font-style: italic;
   background-color: pink;
   margin: 0 auto;
-  border-radius: 5px;
-  justify-content: center
-
-
-
-
+  border-radius: 18px;
+  justify-content: center;
 }
 
 .t-nosotras{
-  font-size: 23px;
+  font-size: 20px;
 }
 
-.card{
-background: transparent;
+.card-body{
+  background-color: pink;
 }
+
 
 .presentacion-container{
-  border: 10px solid red;
   width: 40%;
   height: 230px;
   padding: 10px;
