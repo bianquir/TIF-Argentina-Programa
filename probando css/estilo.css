@@ -138,11 +138,14 @@ nav a{
 
 
 
-.sec_2{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;  
+
+  .sec_2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: flex-start;
 }
 .card{
   background: transparent;
@@ -264,10 +267,14 @@ button[type="submit"]:hover {
 }
 
 form {
-    width: 400px;
-    margin: auto;
-    
-  }
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
  
   label {
     display: block;
@@ -298,6 +305,8 @@ form {
   input[type="submit"]:hover {
     background-color: rgb(255, 97, 123);
   }
+
+  
 
 
 
