@@ -171,26 +171,32 @@ nav a{
 }
 
 
-
+/*Tarjeta del formulario de reclamo*/
 
 .sec_3{
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  width: 100%;
-  max-width: 600px;
-  max-height: 500px;
+  max-width: 500px;
+  max-height: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .title {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
+  font-style: italic;
 }
+
+.detalle_reclamo{
+  font-size: 12px;
+  font-weight: 600;
+  text-align:justify;
+}
+
 
 .form {
   margin-top: 20px;
@@ -213,16 +219,15 @@ nav a{
 }
 
 .form .group input,
-  .form .group textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    outline: 0;
-    width: 100%;
-    background-color: transparent;
-  }
-
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
 
 /*FORMULARIO DE PROCESO*/
 /* Aplicar fondo blanco al formulario */
@@ -253,8 +258,9 @@ button[type="submit"]:hover {
 }
 
 
+/* FORM de contacto */
 
-
+/* Config del título del formulario */
 .sec_4 h2{
     display: flex;
     justify-content: center;
@@ -266,17 +272,23 @@ button[type="submit"]:hover {
     font-style: italic;
 }
 
-form {
-  width: 400px;
-  margin: auto;
-  background-color: white;
+
+/* Config de la tarjeta */
+.contacto {
+
+  background-color: #fff;
+  border-radius: 10px;
   padding: 20px;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+ 
 }
  
-  label {
+  .cuadro {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;

@@ -80,6 +80,7 @@
 
     <section id="sec3" class="section-container sec_3">
       <h2  class="title">Formulario de reclamo</h2>
+      <h3 class="detalle_reclamo">Bienvenido/a a nuestra sección de reclamos. Este formulario ha sido creado para que usted pueda presentar un reclamo de manera formal y detallada, con el fin de resolver cualquier problema o inconveniente que haya experimentado en relación a un producto o servicio.</h3>
       <form class="form" id="formularioProceso" method="post">
         <div class="group">
         <label for="nombreProceso">Nombre</label>
@@ -105,13 +106,20 @@
     <section id="sec4" class="section-container sec_4">
 
       <h2>Formulario de Contacto</h2>
-    <form id="formularioContacto">
-        <label for="nombre">Nombre:</label>
+      <!-- texto de bienvenida para el form 
+
+      <h3>Bienvenido/a a nuestra sección de contacto. Si tiene alguna pregunta, comentario o sugerencia que le gustaría compartir con nosotros, por favor complete el siguiente formulario de contacto. Nos encantaría escuchar de usted y estamos comprometidos a responder tan pronto como nos sea posible. ¡Gracias por su interés en nuestra página!</h3>
+
+      -->
+
+    <form class="contacto"  id="formularioContacto">
+        <label class="cuadro" for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
-        <label for="email">Email:</label>
+        <label class="cuadro" for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-        <label for="mensaje">Mensaje:</label>
+        <label class="cuadro" for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" required></textarea>
+        <br>
         <input type="submit" value="Enviar">            
     </form>
     </section>
