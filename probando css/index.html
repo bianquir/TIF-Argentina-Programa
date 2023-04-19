@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,27 +47,18 @@
     </section>
 
     <section id="sec2" class="section-container sec_2">
-      <h2 style="text-align: center;">Nuestro equipo</h2>
-      <br>
-      <h3 class="t-nosotras">En Frida Íntima contamos con un equipo de trabajo multidisciplinario, 
-        conformado por los departamentos de: marketing, ventas y contabilidad. 
-        Cada uno de estos departamentos es esencial para asegurar el éxito de nuestra empresa en el mercado.</h3>
-      <br>
-      <br>
-      
-       <div class="sec_2">
-      <div class="card" style="width: 21.5%;">
-        <img src="../probando css/imagenes/fotoBian.png" class="card-img-top" alt="...">
-        <div class="card-body" >
+
+      <div class="card" style="width: 18rem;">
+        <img src="./imagenes/Bianca.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
           <h5 class="card-title">Bianca Quiroga</h5>
           <p class="card-text">Es la encargada de ventas, de realizar pago 
             a proveedores y de los cierre de cajas de cada jornada.</p>
           <a href="#" class="btn btn-primary">Contacto</a>
         </div>
-      </div
-        
-      <div class="card" style="width: 21.5%;">
-        <img src="../probando css/imagenes/fotoMari.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./imagenes/mari.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Marisol Grade</h5>
           <p class="card-text">Es la contadora de la empresa,
@@ -74,9 +66,8 @@
           <a href="#" class="btn btn-primary">Contacto</a>
         </div>
       </div>
-         
-      <div class="card" style="width: 21.5%;">
-         <img src="../probando css/imagenes/fotoMarti.png" class="card-img-top" alt="...">
+      <div class="card" style="width: 18rem;">
+        <img src="./imagenes/martina.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Martina Angelico</h5>
           <p class="card-text">Es la encargada de las publicaciones en nuestras redes sociales.
@@ -84,50 +75,63 @@
           <a href="#" class="btn btn-primary">Contacto</a>
         </div>
       </div>
+
     </section>
 
 
     <section id="sec3" class="section-container sec_3">
-      <h2 style="text-align: center;">Formulario de Reclamo</h2>
-      <h3 class="detalle_reclamo">Bienvenido/a a nuestra sección de reclamos. 
-        Este formulario ha sido creado para que usted pueda presentar un reclamo de manera formal y detallada, 
-        con el fin de resolver cualquier problema o inconveniente que haya experimentado en relación a un producto o servicio.</h3>
-      <br>
-      <form id="formularioProceso" method="post">
-         <label for="nombreProceso">Nombre</label>
+      <h2  class="title">Formulario de reclamo</h2>
+      <h3 class="detalle_reclamo">Bienvenido/a a nuestra sección de reclamos. Este formulario ha sido creado para que usted pueda presentar un reclamo de manera formal y detallada, con el fin de resolver cualquier problema o inconveniente que haya experimentado en relación a un producto o servicio.</h3>
+      <form class="form" id="formularioProceso" method="post">
+        <div class="group">
+        <label for="nombreProceso">Nombre</label>
         <input type="text" id="nombreProceso" name="nombreProceso">
+        </div>
         <br>
-        <label for="precio">Código de artículo</label>
-        <input type="text" id="art" name="precio" placeholder="Ingrese el numero del artículo...">
+        <div class="group">
+        <label for="precio">Artículo que compró</label>
+        <input type="number" id="art" name="precio">
+        </div>
         <br>
+        <div class="group">
         <label for="cantidad">¿Cuál es su reclamo?</label>
-        <input type="text" id="reclamo" name="cantidad">
+        <textarea placeholder="" id="reclamo" name="cantidad" rows="5" required=""></textarea>
+        </div>
         <button type="submit">Continuar</button>
     </form>
+      
+       
     </section>
  
 
     <section id="sec4" class="section-container sec_4">
-      <h2 style="text-align: center;">Formulario de Contacto</h2>
-      <h3>Bienvenido/a a nuestra sección de contacto. Si tiene alguna pregunta, 
-        comentario o sugerencia que le gustaría compartir con nosotros, por favor complete el siguiente formulario de contacto.
-        Nos encantaría escuchar de usted y estamos comprometidos a responder tan pronto como nos sea posible. ¡Gracias por su interés en nuestra página!</h3>
-     <br>
-    <form id="formularioProceso" method="post">
-        <label for="nombreProceso">Nombre</label>
-        <input type="text" id="nombreProceso" name="nombreProceso">
-        <br>
-        <label for="email">Email</label>
+
+      <h2>Formulario de Contacto</h2>
+      <!-- texto de bienvenida para el form 
+
+      <h3>Bienvenido/a a nuestra sección de contacto. Si tiene alguna pregunta, comentario o sugerencia que le gustaría compartir con nosotros, por favor complete el siguiente formulario de contacto. Nos encantaría escuchar de usted y estamos comprometidos a responder tan pronto como nos sea posible. ¡Gracias por su interés en nuestra página!</h3>
+
+      -->
+
+    <form class="contacto"  id="formularioContacto">
+        <label class="cuadro" for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label class="cuadro" for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-        <br>
-        <label for="mensaje">Mensaje</label>
+        <label class="cuadro" for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" required></textarea>
-        <button type="submit">Enviar</button>            
+        <br>
+        <input type="submit" value="Enviar">            
     </form>
     </section>
    
 
+
+
+
+
     <footer>
+
         <div class="caja_footer contenido-container">
             <h3>Contenido</h3>
             <a href="#sec1">Sobre la empresa</a>
@@ -163,6 +167,11 @@
 </body>
 </html>
 <script src="./funciones.js"></script>
+
+
+
+
+
 
 
 
