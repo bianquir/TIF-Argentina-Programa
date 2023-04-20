@@ -47,17 +47,15 @@ document.addEventListener('DOMContentLoaded', function() {
           var art = document.getElementById('art').value;
           var reclamo = document.getElementById('reclamo').value;
 
-          // Generar el resumen de la cotización
+          // Generar el resumen del reclamo
           var reclamo = 'Reclamo:\n\n' +
               'Nombre: ' + nombre + '\n' +
               'Art de reclamo: ' + art + '\n' +
               'Detalle del reclamo: ' + reclamo+ '\n' ;
 
-          // Mostrar la cotización en un cuadro de diálogo
+          // Mostrar el resumen 
           alert(reclamo);
 
-          // Continuar con el resto del código de generación del PDF y descarga del archivo, si es necesario
-          // ...
           // Crear un nuevo objeto jsPDF
           var pdf = new jsPDF();
 
@@ -105,23 +103,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
           // Hacer la petición AJAX para enviar los datos al servidor
           $.ajax({
-              url: 'https://reqres.in/api/users?page=2', // URL de regres.in para la petición de contacto
-              method: 'POST', // Método HTTP POST
+              url: 'https://reqres.in/api/users?page=2',
+              method: 'POST', 
               data: {
                   nombre: nombre,
                   email: email,
                   mensaje: mensaje
               },
               success: function(response) {
-                  // Aquí puedes manejar la respuesta del servidor si es necesario
                   console.log('Éxito:', response);
-                  // Puedes mostrar un mensaje de éxito al usuario
                   alert('¡Mensaje enviado con éxito!');
               },
               error: function(xhr, status, error) {
-                  // Aquí puedes manejar los errores de la petición AJAX si es necesario
                   console.error('Error:', error);
-                  // Puedes mostrar un mensaje de error al usuario
                   alert('Error al enviar el mensaje. Por favor inténtelo nuevamente.');
               }
           });
